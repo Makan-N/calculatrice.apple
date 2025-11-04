@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.meta {
+    width: 100%;
+}
+
+
+.meta>button {
+    height: 13vh;
+    width: 24%;
+    border-radius: 50%;
+    font-size: 2rem;
+  
+}
+
+.enfant {
+    height: 8vh;
+    background-color: white;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gris {
+    background-color: rgb(173, 168, 168);
+}
+
