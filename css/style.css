@@ -12,12 +12,12 @@ body {
     width: 24%;
     border-radius: 50%;
     font-size: 2rem;
-  
+
 }
 
 .enfant {
     height: 8vh;
-    background-color: white;
+
 }
 
 .orange {
@@ -28,3 +28,32 @@ body {
     background-color: rgb(173, 168, 168);
 }
 
+#afficheNombre {
+    font-size: 2rem;
+    color: white;
+    text-align: end;
+    font-family: "PT Sans Narrow", sans-serif;
+
+}
+
+#afficheSigne {
+    font-size: 2rem;
+    color: white;
+    text-align: end;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+#autreNombre {
+    font-size: 2rem;
+    color: white;
+    text-align: end;
+    font-family: "PT Sans Narrow", sans-serif;
+
+}
+
+#resultat {
+    font-size: 3rem;
+    color: white;
+    text-align: end;
+    font-family: "PT Sans Narrow", sans-serif;
+}

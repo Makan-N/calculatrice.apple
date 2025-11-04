@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Calculatrice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Calculatrice</title>
 </head>
+
 <body>
 
-    <div class="meta">
-       <div class="enfant">a</div>
-       <div class="enfant">b</div>
-       <div class="enfant">c</div>
-       <div class="enfant">d</div>
-       <button class="gris"><i class="fa-solid fa-delete-left"></i></button>
-       <button class="gris">AC</button>
-       <button class="gris">%</button>
-       <button class="orange">÷</button>
-       <button>7</button>
-       <button>8</button>
-       <button>9</button>
-       <button class="orange">X</button>
-       <button>4</button>
-       <button>5</button>
-       <button>6</button>
-       <button class="orange">-</button>
-       <button>1</button>
-       <button>2</button>
-       <button>3</button>
-       <button class="orange">+</button>
-       <button>+/-</button>
-       <button>0</button>
-       <button>,</button>
-       <button class="orange">=</button>
-    </div>
+  <div class="meta">
+    <div class="enfant" id="afficheNombre"></div>
+    <div class="enfant" id="afficheSigne"></div>
+    <div class="enfant" id="autreNombre"></div>
+    <div class="enfant" id="resultat"></div>
+    <button class="gris" id="efface"><i class="fa-solid fa-delete-left"></i></button>
+    <button class="gris" id="raz">AC</button>
+    <button class="gris" id="pourcent">%</button>
+    <button class="orange" id="diviser">÷</button>
+    <button id="sept">7</button>
+    <button id="huit">8</button>
+    <button id="neuf">9</button>
+    <button class="orange" id="multiplier">X</button>
+    <button id="quatre">4</button>
+    <button id="cinq">5</button>
+    <button id="six">6</button>
+    <button class="orange" id="moins">-</button>
+    <button id="un">1</button>
+    <button id="deux">2</button>
+    <button id="trois">3</button>
+    <button class="orange" id="plus">+</button>
+    <button>+/-</button>
+    <button id="zero">0</button>
+    <button id="virgule">,</button>
+    <button class="orange" id="egale">=</button>
+  </div>
   <script src="https://kit.fontawesome.com/beeb4cef94.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
-
-
