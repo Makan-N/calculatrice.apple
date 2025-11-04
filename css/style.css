@@ -32,7 +32,8 @@ body {
     font-size: 2rem;
     color: white;
     text-align: end;
-    font-family: "PT Sans Narrow", sans-serif;
+    padding-right: 1rem;
+ font-family: "Bebas Neue", sans-serif;
 
 }
 
@@ -40,20 +41,24 @@ body {
     font-size: 2rem;
     color: white;
     text-align: end;
-    font-family: "PT Sans Narrow", sans-serif;
+    padding-right: 1rem;
+ font-family: "Bebas Neue", sans-serif;
+
 }
 
 #autreNombre {
     font-size: 2rem;
     color: white;
     text-align: end;
-    font-family: "PT Sans Narrow", sans-serif;
+    padding-right: 1rem;
+  font-family: "Bebas Neue", sans-serif;
 
 }
 
 #resultat {
     font-size: 3rem;
     color: white;
-    text-align: end;
-    font-family: "PT Sans Narrow", sans-serif;
+    text-align: start;
+ font-family: "Bebas Neue", sans-serif;
+    
 }

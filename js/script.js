@@ -31,75 +31,190 @@ un.addEventListener("click", function () {
 });
 
 deux.addEventListener("click", function () {
-    affichage.innerText += 2;
+
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 2;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 2;
+    }
+
+
+
 
 });
 
 trois.addEventListener("click", function () {
-    affichage.innerText += 3;
+
+
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 3;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 3;
+    }
+
+
+
 
 });
 
 quatre.addEventListener("click", function () {
-    affichage.innerText += 4;
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 4;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 4;
+    }
+
+
+
+
 
 });
 
 cinq.addEventListener("click", function () {
-    affichage.innerText += 5;
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 5;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 5;
+    }
+
+
+
+
 
 });
 
 six.addEventListener("click", function () {
-    affichage.innerText += 6;
+
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 6;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 6;
+    }
+
+
+
 
 });
 
 sept.addEventListener("click", function () {
-    affichage.innerText += 7;
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 7;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 7;
+    }
+
+
+
+
 
 });
 
 huit.addEventListener("click", function () {
-    affichage.innerText += 8;
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 8;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 8;
+    }
+
+
+
 
 });
 
 neuf.addEventListener("click", function () {
-    affichage.innerText += 9;
+
+    if (affichage.innerHTML == "0") {
+        affichage.innerHTML = 9;
+
+    } else if (affichage.innerText != "0") {
+        affichage.innerText += 9;
+    }
+
+
+
 
 });
 
 zero.addEventListener("click", function () {
-    affichage.innerText += 0;
+
+    if (affichage.innerText == "") {
+        affichage.innerText = "0";
+
+    } else {
+        affichage.innerText += "0";
+    }
 
 });
 
 
 // Afficher les signes
 plus.addEventListener("click", function () {
+
     afficheSigne.innerText = "+";
-    affichage = autreNombre
+
+
+    if (afficheNombre.innerText == "") {
+        affichage = afficheNombre;
+    } else {
+        affichage = autreNombre;
+    }
+
 });
 
 moins.addEventListener("click", function () {
     afficheSigne.innerText = "-";
-    affichage = autreNombre
+
+    if (afficheNombre.innerText == "") {
+        affichage = afficheNombre;
+    } else {
+        affichage = autreNombre;
+    }
 });
 
 diviser.addEventListener("click", function () {
     afficheSigne.innerText = "/";
-    affichage = autreNombre
+
+    if (afficheNombre.innerText == "") {
+        affichage = afficheNombre;
+    } else {
+        affichage = autreNombre;
+    }
 });
 
 multiplier.addEventListener("click", function () {
     afficheSigne.innerText = "x";
-    affichage = autreNombre
+
+    if (afficheNombre.innerText == "") {
+        affichage = afficheNombre;
+    } else {
+        affichage = autreNombre;
+    }
 });
 
 virgule.addEventListener("click", function () {
-    affichage.innerText += ".";
-    
+
+    // regex d'un point dans la chaine de caractère
+    let regexPoint = /\./g;
+
+    if (affichage.innerText == "") {
+        affichage.innerText = "0.";
+    } else if (affichage.innerText != "0." && affichage.innerText.search(regexPoint) < 0) {
+        affichage.innerText += ".";
+    }
+
+
+
+
+
+
+
 });
 
 
@@ -117,11 +232,7 @@ remiseaZero.addEventListener("click", function () {
 
 efface.addEventListener("click", function () {
 
-    afficheNombre.innerText = "";
-    afficheSigne.innerText = "";
-    autreNombre.innerText = "";
-    resultat.innerText = "";
-    affichage = afficheNombre;
+   affichage.innerText = affichage.innerText.slice(0,-1);
 });
 
 
@@ -141,19 +252,22 @@ egale.addEventListener("click", function () {
             break;
 
         case "/":
-            resultat.innerText = Number(afficheNombre.innerText) / Number(autreNombre.innerText);
-            break;
+            if (autreNombre.innerText == "0") {
+                resultat.innerText = " Pas possible";
+            } else {
+                resultat.innerText = Number(afficheNombre.innerText) / Number(autreNombre.innerText);
+            }
 
+            break;
 
         case "x":
             resultat.innerText = Number(afficheNombre.innerText) * Number(autreNombre.innerText);
             break;
-
-
     }
 
 
 });
+
 
 
 
